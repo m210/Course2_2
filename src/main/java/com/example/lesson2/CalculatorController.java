@@ -36,8 +36,6 @@ public class CalculatorController {
 
     @GetMapping("/devide")
     public String devide(@RequestParam int num1, @RequestParam int num2) {
-        if(num2 == 0)
-            return num1 + " shouldn't be divided to 0";
         return num1 + " / " + num2 + " = " + service.devide(num1, num2);
     }
 }
